@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/login_register.css">
+</head>
+<body>
+    <div class="modal-wrapper">
+        <div class="login-wrapper">
+          <div class="collapsed-section hidden">
+            <div class="hide-section">
+              <h2 class="collapsed-heading">Have an Account?</h2>
+              <p class="collapsed-text">To keep connected with us please<br>login with your personal info</p>
+                <button class="collapsed-btn" onclick="toggleOpen()">Log In</button>
+            </div>
+          </div>
+          <div class="form-wrapper login">
+            <h2 class="form-heading">Log In To Your Profile</h2>
+            <form action="/login" method="POST" class="form login">
+              <span>Use your email account:</span>
+              <div class="input-field">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email" name="email">
+              </div>
+              <div class="input-field">
+                <i class="fas fa-key"></i>
+                <input type="password" placeholder="Password" name="password">
+              </div>
+              <a href="#" id="forgot-password">Forgot Your Password?</a>
+              <button class="form-btn" type="submit">Log In</button>
+            </form>
+          </div>
+        </div>
+        <div class="signup-wrapper">
+          <div class="collapsed-section">
+            <div class="hide-section">
+              <h2 class="collapsed-heading">New Here?</h2>
+              <p class="collapsed-text">Enter your personal details<br>and start journey with us!</p>
+                <button class="collapsed-btn" onclick="toggleOpen()">Sign Up</button>
+            </div>
+          </div>
+          <div class="form-wrapper signup hidden">
+            <h2 class="form-heading">Create Account</h2>
+            <form action="/register" method="POST" class="form login">
+              <span>Use your email for registration:</span>
+              <div class="input-field">
+                <input type="text" placeholder="First Name" name="firstname">
+              </div>
+              <div class="input-field">
+                <input type="text" placeholder="Surname"name="surname">
+              </div>
+              <div class="input-field">
+                <input type="date" placeholder="" name="DOB">
+              </div>
+              <div class="input-field">
+                <input type="email" placeholder="Email" name="email">
+              </div>
+              <div class="input-field">
+                <input type="password" placeholder="Password" name="password">
+              </div>
+              <button class="form-btn" type="submit">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+</body>
+<script src="/javascripts/login_register.js"></script>
+</html>
