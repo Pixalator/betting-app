@@ -28,10 +28,9 @@ console.log("bet_now_clicked",i);
 
 
 async function api_currentMatches_fetch() {
-  // const currentMatches_api =
-  //   "https://api.cricapi.com/v1/currentMatches?apikey=67dcb328-b01f-4cee-aa7e-e1f9ba31ce5d&offset=0";
+ 
   const currentMatches_api =
-    "https://api.cricapi.com/v1/cricScore?apikey=67dcb328-b01f-4cee-aa7e-e1f9ba31ce5d";
+    "https://api.cricapi.com/v1/cricScore?apikey=";//free at https://cricketdata.org/
 
   const response = await fetch(currentMatches_api);
   const json_data = await response.json();
